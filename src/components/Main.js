@@ -1,10 +1,12 @@
+import "./Main.css";
+
 export default function Main() {
     return (
         <main>
-            <figure>
+            <figure id="img-container">
                 <img
                     alt="Mauricio de Sousa discursando na 17ª Bienal do Livro"
-                    id="main-image"
+                    id="main-img"
                     src="https://i.imgur.com/RtQwZ54.jpg"
                 />
 
@@ -32,7 +34,7 @@ export default function Main() {
                 </figcaption>
             </figure>
 
-            <h2 tabIndex="0">Um pouco sobre a vida de Mauricio de Sousa:</h2>
+            <h2 tabIndex="0">Um pouco sobre a vida de Mauricio de Sousa</h2>
 
             <section>
                 <ul>
