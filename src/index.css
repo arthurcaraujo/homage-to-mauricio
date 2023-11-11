@@ -20,3 +20,9 @@ a:hover {
     color: #900;
     font-weight: bold;
 }
+
+@media (min-width: 992px) {
+    body {
+        font-size: 1.2rem;
+    }
+}

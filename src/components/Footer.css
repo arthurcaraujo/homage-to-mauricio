@@ -1,5 +1,12 @@
 footer {
     background-color: #fff;
+    border-top: 0.125rem dashed black;
     padding: 1.5rem 0.5rem;
     text-align: center;
+}
+
+@media (min-width: 992px) {
+    footer {
+        padding: 3rem;
+    }
 }

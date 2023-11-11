@@ -58,7 +58,6 @@ p {
 blockquote {
     font-style: italic;
     margin: 1rem 0;
-    /* max-width: 480px; */
 }
 
 blockquote p {
@@ -69,4 +68,77 @@ blockquote p {
     font-size: 1.1rem;
     font-weight: bold;
     margin: 2rem 0;
+}
+
+@media (min-width: 576px) {
+    main {
+        margin: auto;
+        max-width: 33.75rem;  /*  540px => 33.75rem  */
+    }
+
+    #more-info {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        max-width: 45rem;  /*  720px => 45rem  */
+    }
+
+    blockquote {
+        margin: 1rem auto;
+        max-width: 32.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #img-container {
+        margin: 4rem auto 3rem;
+    }
+
+    #img-caption {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 3rem 0 2.5rem;
+    }
+
+    li {
+        margin: 1.3rem 0 1.3rem 1.1rem;
+    }
+
+    li:last-child {
+        margin-bottom: 3rem;
+    }
+
+    p {
+        margin: 1.3rem 0;
+    }
+
+    blockquote {
+        margin: 1.3rem auto;
+        max-width: 38.5rem;
+    }
+
+    blockquote p {
+        margin: 1.3rem 0 0;
+    }
+
+    #more-info {
+        font-size: 1.3rem;
+        margin: 3rem 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        max-width: 60rem;  /*  960px => 60rem  */
+    }
+
+    #img-container {
+        padding: 1rem;
+    }
 }
