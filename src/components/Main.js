@@ -1,14 +1,29 @@
 import "./Main.css";
+import { useState } from "react";
 
 export default function Main() {
+    const [displayModal, setDisplayModal] = useState(false);
+
+    const zoomImg = () => setDisplayModal(true);
+    const closeImg = () => setDisplayModal(false);
+
     return (
         <main>
             <figure id="img-container">
                 <img
                     alt="Mauricio de Sousa discursando na 17ª Bienal do Livro"
                     id="main-img"
+                    onClick={zoomImg}
                     src="https://i.imgur.com/RtQwZ54.jpg"
                 />
+
+                <div
+                    id="modal"
+                    style={{display: displayModal ? "block" : "none"}}
+                >
+                    <span id="modal-close-btn" onClick={closeImg}>&times;</span>
+                    <img id="modal-img" src="https://i.imgur.com/RtQwZ54.jpg" />
+                </div>
 
                 <figcaption id="img-caption">
                     <a
